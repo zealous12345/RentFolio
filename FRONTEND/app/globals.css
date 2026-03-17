@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: #035381;
+  --black-color: #191919;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary-color: var(--primary-color);
+  --color-black-color: var(--black-color);
+  --font-sans: "Roboto Condensed", sans-serif;
+  --font-heading: "Oswald", sans-serif;
+  --font-paragraph: "Roboto Condensed", sans-serif;
+}
+
+@layer base {
+  a {
+    text-decoration: none !important;
+  }
+
+  body, p, a, div, span, button, input, textarea {
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1px;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
