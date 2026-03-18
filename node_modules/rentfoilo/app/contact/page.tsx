@@ -1,4 +1,5 @@
 import { FaArrowRight, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Contact Us | RentFolio Ltd",
@@ -46,45 +47,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <form autoComplete="off" className="flex-1">
-          <div className="flex flex-col sm:flex-row gap-8 mb-8">
-            <div className="relative flex-1">
-              <input
-                type="text"
-                placeholder="Name"
-                className="bg-[#efefef] text-primary-color py-5 px-6 w-full focus:shadow-lg outline-none border-b-2 border-transparent focus:border-primary-color transition-all duration-300"
-                name="full_name"
-              />
-            </div>
-            <div className="relative flex-1">
-              <input
-                type="text"
-                placeholder="Phone Number"
-                className="bg-[#efefef] text-primary-color py-5 px-6 w-full focus:shadow-lg outline-none border-b-2 border-transparent focus:border-primary-color transition-all duration-300"
-                name="phone_number"
-              />
-            </div>
-          </div>
-          <div className="relative mb-8">
-            <input
-              type="email"
-              placeholder="E-mail"
-              className="bg-[#efefef] text-primary-color py-5 px-6 w-full focus:shadow-lg outline-none border-b-2 border-transparent focus:border-primary-color transition-all duration-300"
-              name="email_address"
-            />
-          </div>
-          <div className="relative mb-8">
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows={6}
-              className="bg-[#efefef] text-primary-color w-full py-5 px-6 focus:shadow-lg outline-none border-b-2 border-transparent focus:border-primary-color transition-all duration-300 resize-none"
-            ></textarea>
-          </div>
-          <button type="submit" className="w-full bg-primary-color py-5 px-6 text-white font-bold tracking-widest hover:-translate-y-2 transition-transform duration-300 relative uppercase">
-            SEND MESSAGE
-          </button>
-        </form>
+        <ContactForm />
       </section>
 
       {/* Map and Info Section */}

@@ -9,5 +9,7 @@
     "build": "npm run build -w FRONTEND",
     "start": "npm run start -w FRONTEND",
     "lint": "npm run lint -w FRONTEND"
+  },
+  "devDependencies": {
   }
 }
